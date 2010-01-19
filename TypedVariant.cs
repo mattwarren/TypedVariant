@@ -1,16 +1,10 @@
-﻿
-//Based on the StackOverflow question  from
-//http://stackoverflow.com/questions/1649264/how-to-make-a-type-safe-wrapper-around-variant-values
-
-// The idea is to but non-type safe Objects into a type-safe class so that their actual values can be used.
-//OPC Data tags stored values as objects.
-
-//USAGE
+﻿//USAGE
 //object opcDataTag = (object)"testing"; //this would be returned from an OPC Data Tag, not created this way!!
 //var typedVariant = new TypedVariant<string>(opcDataTag);
 //.....
 //string actualString = typedVariant; //using implicit cast
 //int actualInt = typedVariant; //COMPILE time fail as "typedVariant" only contains a string value
+
 namespace OPC_Client
 {       
 	using System;
